@@ -47,15 +47,15 @@ function proxyCollection(from, target) {
   _.each(_.functions(Backbone.Collection.prototype), function(method) {
     if (!_.contains(blacklistedMethods, method)) {
       methods[method] = function() {
-        return Backbone.Collection.prototype[method].apply(from, arguments);
+        return from[method].apply(from, arguments);
       };
     }
   });
 
   _.extend(target, Backbone.Events, methods);
 
-  target.listenTo(from, 'all', pipeEvents);
   target.listenTo(from, 'all', updateLength);
+  target.listenTo(from, 'all', pipeEvents);
 
   updateLength();
   return target;
@@ -64,7 +64,7 @@ function proxyCollection(from, target) {
 module.exports = proxyCollection;
 
 
-},{}],"backbone-collection-proxy":[function(require,module,exports){
+},{"backbone":false,"underscore":false}],"backbone-collection-proxy":[function(require,module,exports){
 module.exports=require('+xzAE8');
 },{}]},{},[])
 ;
