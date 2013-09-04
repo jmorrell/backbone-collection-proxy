@@ -1,6 +1,6 @@
 # backbone-collection-proxy
 
-[![Build Status](https://secure.travis-ci.org/user/backbone-collection-proxy.png?branch=master)](http://travis-ci.org/user/backbone-collection-proxy)
+[![Build Status](https://secure.travis-ci.org/jmorrell/backbone-collection-proxy.png?branch=master)](http://travis-ci.org/jmorrell/backbone-collection-proxy)
 
 Create a read-only copy of a backbone collection that stays in sync with the original 
 collection as it's modified, and forwards all of the original collection's events through
