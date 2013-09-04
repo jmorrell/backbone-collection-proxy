@@ -61,16 +61,6 @@ original collection will be forwarded to the proxied collection.
 
 ## Installation
 
-### Usage with Bower
-
-Install with [Bower](http://bower.io):
-
-```
-bower install backbone-collection-proxy
-```
-
-The component can be used as a Common JS module, an AMD module, or a global.
-
 ### Usage with Browserify
 
 Install with npm, use with [Browserify](http://browserify.org/)
@@ -84,6 +74,16 @@ and in your code
 ```javascript
 var proxyCollection = require('backbone-collection-proxy');
 ```
+
+### Usage with Bower
+
+Install with [Bower](http://bower.io):
+
+```
+bower install backbone-collection-proxy
+```
+
+The component can be used as a Common JS module, an AMD module, or a global.
 
 ### Usage as browser global
 
@@ -121,6 +121,20 @@ To run the tests in Firefox, just once, as CI would:
 
 ```
 npm test
+```
+
+If you make any changes you will have to re-build the UMD module that the
+tests runs against. You can do this by running `grunt`. You need to install
+the grunt command line tools globally by running
+
+```
+npm install -g grunt-cli
+```
+
+and then running the following command with no arguments to build
+
+```
+grunt
 ```
 
 ## License
