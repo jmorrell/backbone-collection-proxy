@@ -21,9 +21,10 @@ proxy.map(function(model) { /* ... */ });
 
 ## Why?
 
-This module is somewhat useless on it's own, but it's intended to be used to
-hide the actual `Backbone.Collection` so that I can manipulate it without the
-user being able to modify the proxy.
+This module is somewhat useless on it's own, but it's intended to provide as much
+of the `Backbone.Collection` interface to a read-only proxy, so that I can modify
+and manipulate the proxied collection and expose those changes to the library 
+consumer.
 
 ## Usage
 
