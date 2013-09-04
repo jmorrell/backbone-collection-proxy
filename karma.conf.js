@@ -9,7 +9,7 @@ module.exports = function(config) {
       'bower_components/jquery/jquery.js',
       'bower_components/underscore/underscore.js',
       'bower_components/backbone/backbone.js',
-      'index.js',
+      'backbone-collection-proxy.js',
       'test/backbone-environment.js',
       'test/**/*.js'
     ],
