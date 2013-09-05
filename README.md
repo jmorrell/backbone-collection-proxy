@@ -57,8 +57,20 @@ as if they were called on the original collection.
 ### Events
 
 Note that events fired on the proxied collection *will not* also be
-fired on the original collection, however all events fired on the
-original collection will be forwarded to the proxied collection.
+fired on the original collection. Certain events fired on the
+original collection will be forwarded to the proxied collection. These
+events are:
+
+* `add`
+* `remove`
+* `reset`
+* `sort`
+* `destroy`
+* `change`
+* `change:[attribute]`
+
+References to the original collection passed as arguments in these
+events will be replaced with a reference to the proxy collection.
 
 ## Installation
 
