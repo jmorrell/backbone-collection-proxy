@@ -1,7 +1,7 @@
 {
   "name": "backbone-collection-proxy",
   "description": "Create a read-only copy of a backbone collection that stays in sync with the original",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "homepage": "http://github.com/jmorrell/backbone-collection-proxy",
   "main": "index.js",
   "license": "MIT",
