@@ -1,3 +1,7 @@
+v0.2.1
+
+* Added `.models` to the proxy
+
 v0.2.0
 
 * Changed the event forwarding policy to be whitelist-only
