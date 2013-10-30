@@ -43,12 +43,12 @@ The following methods are not available on the proxy:
 * `pop`
 * `shift`
 * `unshift`
+* `models`
 
 Additionally, there is no access to the following properties:
 
 * comparator
 * model
-* models
 * url
 
 All other collection methods should work and return the same result

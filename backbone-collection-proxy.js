@@ -68,6 +68,7 @@ function proxyCollection(from, target) {
 
   target.listenTo(from, 'all', updateLength);
   target.listenTo(from, 'all', pipeEvents);
+  target.models = from.models;
 
   updateLength();
   return target;

@@ -62,6 +62,14 @@ $(document).ready(function() {
     equal(original.length, proxied.length, "should have same length");
   });
 
+  test("has the same .models", function() {
+    equal(original.models, proxied.models, "should have the same models array");
+
+    // Add a new model and make sure the change propagates
+    original.add({ a: 3 });
+    equal(original.models, proxied.models, "should still have the same models array");
+  });
+
   test('get', function() {
     original.each(function(model) {
       ok(proxied.get(model.cid));
