@@ -68,6 +68,10 @@ $(document).ready(function() {
     // Add a new model and make sure the change propagates
     original.add({ a: 3 });
     equal(original.models, proxied.models, "should still have the same models array");
+
+    // Reset the orignal collection and make sure the change propagates
+    original.reset(resetData);
+    equal(original.models, proxied.models, "should still have the same models array");
   });
 
   test('get', function() {

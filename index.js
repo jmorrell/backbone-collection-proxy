@@ -25,6 +25,12 @@ function proxyCollection(from, target) {
     var isChangeEvent = eventName === 'change' ||
                         eventName.slice(0, 7) === 'change:';
 
+    // In the case of a `reset` event, the Collection.models reference
+    // is updated to a new array, so we need to update our reference.
+    if (eventName === 'reset') {
+      target.models = from.models;
+    }
+
     if (_.contains(eventWhiteList, eventName)) {
       if (_.contains(['add', 'remove', 'destory'], eventName)) {
         args[2] = target;
