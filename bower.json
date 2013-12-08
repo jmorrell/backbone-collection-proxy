@@ -19,8 +19,8 @@
     "package.json"
   ],
   "dependencies": {
-    "backbone": "~1.0.0",
-    "underscore": "~1.5.1"
+    "backbone": ">=1.0.0",
+    "underscore": ">=1.5.1"
   },
   "devDependencies": {
     "chai": "*",
