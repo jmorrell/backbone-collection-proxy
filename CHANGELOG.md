@@ -1,3 +1,7 @@
+v0.2.3
+
+* Updated version requirement strings
+
 v0.2.2
 
 * Added `.models` to the proxy
