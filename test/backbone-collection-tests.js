@@ -149,18 +149,6 @@ $(document).ready(function() {
          [4, 0]);
   });
 
-  test("sortedIndex", function () {
-    var model = new Backbone.Model({key: 2});
-    var collection = getProxyCollection(new (Backbone.Collection.extend({
-      comparator: 'key'
-    }))([model, {key: 1}]));
-    equal(collection.sortedIndex(model), 1);
-    equal(collection.sortedIndex(model, 'key'), 1);
-    equal(collection.sortedIndex(model, function (model) {
-      return model.get('key');
-    }), 1);
-  });
-
   test("trigger custom events on models", 1, function() {
     var fired = null;
     a.on("custom", function() { fired = true; });
