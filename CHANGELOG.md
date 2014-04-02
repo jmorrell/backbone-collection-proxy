@@ -1,3 +1,7 @@
+v0.2.4
+
+* Fixed type in event name
+
 v0.2.3
 
 * Updated version requirement strings
