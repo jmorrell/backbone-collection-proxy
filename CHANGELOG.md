@@ -1,3 +1,7 @@
+v0.2.5
+
+* Add `sync`, `request`, and `error` to events whitelist
+
 v0.2.4
 
 * Fixed type in event name
