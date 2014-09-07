@@ -11,7 +11,7 @@ var blacklistedMethods = [
 ];
 
 var eventWhiteList = [
-  'add', 'remove', 'reset', 'sort', 'destroy'
+  'add', 'remove', 'reset', 'sort', 'destroy', 'sync', 'request', 'error'
 ];
 
 function proxyCollection(from, target) {
